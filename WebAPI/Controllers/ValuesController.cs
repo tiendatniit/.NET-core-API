@@ -135,7 +135,7 @@ namespace WebAPI.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
+        [HttpPut]
         [EnableCors("AllowMyOrigin")]
         public JsonResult Put(int skillid, [FromBody] Player player)
         {
@@ -184,7 +184,7 @@ namespace WebAPI.Controllers
 
         // DELETE api/values/5
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{PlayerId}")]
         [EnableCors("AllowMyOrigin")]
         public JsonResult Delete(int PlayerId)
         {
